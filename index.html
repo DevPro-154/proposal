@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- &copy; 2026 Dev Sankalp Solutions | Helly Trivedi. All rights reserved. Unauthorised copying or redistribution is prohibited. -->
+    <meta name="author" content="Dev Sankalp Solutions | Helly Trivedi">
+    <meta name="copyright" content="&copy; 2026 Dev Sankalp Solutions | Helly Trivedi">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>ProposalPro: Client-Ready Proposal PDFs in 60 Seconds</title>
+    <style>
+        :root {
+            box-sizing: border-box;
+            padding-top: env(safe-area-inset-top, 0px);
+            padding-bottom: env(safe-area-inset-bottom, 0px);
+            --bg: #fafaf7;
+            --fg: #16181d;
+            --mut: #5b616e;
+            --card: #fff;
+            --bd: #e3e3dc;
+            --ac: #4f46e5;
+            --acfg: #fff
+        }
+
+        @media (prefers-color-scheme:dark) {
+            :root:not([data-theme="light"]) {
+                --bg: #101216;
+                --fg: #f2f2ee;
+                --mut: #9aa0ad;
+                --card: #191c22;
+                --bd: #2a2e37;
+                --ac: #818cf8;
+                --acfg: #101216
+            }
+        }
+
+        :root[data-theme="dark"] {
+            --bg: #101216;
+            --fg: #f2f2ee;
+            --mut: #9aa0ad;
+            --card: #191c22;
+            --bd: #2a2e37;
+            --ac: #818cf8;
+            --acfg: #101216
+        }
+
+        html {
+            scroll-padding-top: env(safe-area-inset-top, 0px)
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        body {
+            margin: 0;
+            background: var(--bg);
+            color: var(--fg);
+            font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif
+        }
+
+        main {
+            max-width: 760px;
+            margin: 0 auto;
+            padding: 28px 20px 60px
+        }
+
+        h1 {
+            font-size: clamp(28px, 6vw, 42px);
+            line-height: 1.15;
+            margin: 8px 0 14px
+        }
+
+        h2 {
+            font-size: 24px;
+            margin: 44px 0 12px
+        }
+
+        .mut {
+            color: var(--mut)
+        }
+
+        .btn {
+            display: inline-block;
+            background: var(--ac);
+            color: var(--acfg);
+            padding: 14px 26px;
+            border-radius: 10px;
+            font-weight: 700;
+            text-decoration: none;
+            border: 0;
+            font-size: 16px;
+            cursor: pointer
+        }
+
+        .card {
+            background: var(--card);
+            border: 1px solid var(--bd);
+            border-radius: 14px;
+            padding: 20px;
+            margin: 14px 0
+        }
+
+        ul {
+            padding-left: 20px
+        }
+
+        li {
+            margin: 6px 0
+        }
+
+        label {
+            display: block;
+            font-size: 14px;
+            font-weight: 600;
+            margin: 12px 0 4px
+        }
+
+        input,
+        textarea,
+        select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid var(--bd);
+            border-radius: 8px;
+            background: var(--bg);
+            color: var(--fg);
+            font: inherit
+        }
+
+        textarea {
+            min-height: 80px
+        }
+
+        pre {
+            white-space: pre-wrap;
+            background: var(--bg);
+            border: 1px solid var(--bd);
+            border-radius: 8px;
+            padding: 14px;
+            font: 14px/1.55 inherit;
+            overflow-x: auto
+        }
+
+        .price {
+            font-size: 40px;
+            font-weight: 800
+        }
+
+        .price s {
+            font-size: 20px;
+            color: var(--mut);
+            font-weight: 400
+        }
+
+        .tag {
+            display: inline-block;
+            font-size: 13px;
+            border: 1px solid var(--bd);
+            border-radius: 99px;
+            padding: 3px 12px;
+            color: var(--mut)
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <span class="tag">For freelancers, agencies &amp; consultants</span>
+        <h1>Send client-ready proposals in 60 seconds.</h1>
+        <p class="mut" style="font-size:18px">Fill a short form, click once, and download a branded proposal PDF with
+            your logo, itemised pricing and a signature block. No design skills, no formatting, no AI prompts. Try the
+            free version below.</p>
+        <p>
+            <a class="btn" href="https://2504693798645.gumroad.com/l/hsnkjx" target="_blank" rel="noopener">Get the full
+                version, $12</a>
+            <a class="btn" href="#try"
+                style="background:transparent;color:var(--ac);border:2px solid var(--ac);margin-left:8px">Try it
+                free</a>
+        </p>
+        <p class="mut" style="font-size:14px">One-time payment · Lifetime use · Bonus: 25 outreach templates · 7-day
+            refund</p>
+
+
+        <h2 id="buy">Unlock the full version</h2>
+        <div class="card" style="text-align:center">
+            <div class="price">$12</div>
+            <p class="mut">One-time payment · Instant download · Unlimited proposals, no watermark</p>
+            <a class="btn" href="https://2504693798645.gumroad.com/l/hsnkjx" target="_blank" rel="noopener">Buy
+                ProposalPro</a>
+            <p class="mut" style="font-size:14px">7-day refund if it doesn't work for you.</p>
+        </div>
+
+
+        <h2 id="try">Try the free version</h2>
+        <div class="card">
+            <label>Your name</label><input id="n" placeholder="Priya">
+            <label>Client name</label><input id="c" placeholder="Alex">
+            <label>Service you offer</label><input id="s" placeholder="website redesign">
+            <label>Client's problem</label><textarea id="p"
+                placeholder="Their site loads slowly and loses customers on mobile"></textarea>
+            <label>Result you'll deliver</label><input id="r"
+                placeholder="a faster mobile site that converts more visitors">
+            <label>Price &amp; timeline</label><input id="t" placeholder="$800, delivered in 10 days">
+            <p><button class="btn" onclick="gen()">Generate proposal</button></p>
+            <pre id="out" hidden></pre>
+            <button class="btn" id="cp" hidden onclick="copy()" style="padding:8px 16px;font-size:14px">Copy</button>
+        </div>
+
+        <h2>What's inside the kit</h2>
+        <ul>
+            <li><b>One-click proposal PDF generator:</b> fill a short form and download a branded, client-ready PDF in
+                about 60 seconds</li>
+            <li><b>7 ready-made service presets:</b> website, graphic design, content writing, digital marketing, video
+                editing, app development and consulting, each with a pre-written overview, deliverables and pricing you
+                can edit</li>
+            <li><b>Your branding on every PDF:</b> add your logo, pick your brand colour and choose your currency (USD,
+                EUR, GBP, INR, AUD, CAD, AED)</li>
+            <li><b>Automatic pricing:</b> itemised line items with tax/GST/VAT, deposit amount and total calculated for
+                you</li>
+            <li><b>Professional layout:</b> client details, timeline, terms, validity date, reference number and a
+                signature block for acceptance</li>
+            <li><b>Remembers your details:</b> your business name, contact info and terms are saved for your next
+                proposal</li>
+            <li><b>Works offline, no accounts:</b> one file, any browser, and your client data never leaves your
+                computer</li>
+            <li><b>Unlimited proposals, no watermark:</b> pay once and use it forever</li>
+            <li><b>Bonus PDF kit:</b> 10 proposal templates, 8 cold email and LinkedIn DM scripts, 5 follow-ups, 2
+                objection handlers and a pricing cheat-sheet</li>
+        </ul>
+
+        <footer
+            style="margin-top:48px;padding-top:20px;border-top:1px solid var(--bd);font-size:13px;color:var(--mut);text-align:center">
+            <p>&copy; 2026 Dev Sankalp Solutions | Helly Trivedi. All rights reserved.</p>
+            <p>ProposalPro is licensed, not sold. You may use this free demo for your own proposals. Copying,
+                redistributing, rebranding, reselling or reverse-engineering the tool or its code is not allowed without
+                written permission.</p>
+        </footer>
+
+    </main>
+    <script>
+        function v(i) { return document.getElementById(i).value.trim() || "[…]" }
+        function gen() {
+            const t = `Subject: Quick idea for ${v('c')}'s ${v('s')}\n\nHi ${v('c')},\n\nI noticed a challenge: ${v('p')}.\n\nI can help with ${v('s')}. My goal is to give you ${v('r')}.\n\nHow it works:\n1. Short call to confirm goals\n2. I deliver a first draft for your feedback\n3. Revisions, final delivery and handover\n\nInvestment & timeline: ${v('t')}.\n\nIf this sounds right, reply "yes" and I'll send over next steps today.\n\nBest,\n${v('n')}`;
+            const o = document.getElementById('out'); o.textContent = t; o.hidden = false; document.getElementById('cp').hidden = false
+        }
+        function copy() { try { navigator.clipboard.writeText(document.getElementById('out').textContent) } catch (e) { } }
+    </script>
+</body>
+
+</html>
